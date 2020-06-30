@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>login</display-name>
+  <welcome-file-list>
+    <welcome-file>select.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>loginServlet</display-name>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>servlets.userServlet</servlet-class>
+ 
+  </servlet>
+  
+  
+  
+  <servlet> 
+  
+     <servlet-name>HomeServlet</servlet-name>
+	<servlet-class>HomeServlet</servlet-class>
+	
+  </servlet>
+  
+  <servlet-mapping>
+<servlet-name>HomeServlet</servlet-name>
+<url-pattern>/HomeServlet</url-pattern>
+</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+
+
+<servlet>  
+    <description></description>  
+    <display-name>LogoutServlet</display-name>  
+    <servlet-name>LogoutServlet</servlet-name>  
+    <servlet-class>servlets.LogoutServlet</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>LogoutServlet</servlet-name>  
+    <url-pattern>/LogoutServlet</url-pattern>  
+  </servlet-mapping>
+  
+  
+
+  
+
+</web-app>
+
